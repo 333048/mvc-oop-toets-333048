@@ -1,22 +1,17 @@
 <?php
 
-class CountryModel
+class VulkaanModel 
 {
     private $db;
 
     public function __construct()
     {
-        $this->db = new Database();
+        $this->db = new Database;
     }
 
-    public function getCountries()
+    public function getVulkaans()
     {
-        $sql = "SELECT  Id
-                       ,Naam
-                FROM   Vulkaan";
-
-        $this->db->query($sql);
-
+        $this->db->query('SELECT * FROM Vulkaan ORDER BY Id ASC LIMIT 5');
         return $this->db->resultSet();
     }
 }

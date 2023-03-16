@@ -2,7 +2,7 @@
 
 class Core
 {
-    private $currentController = 'Home';
+    private $currentController = 'vulkaanController';
     private $currentMethod = 'index';
     private $params = [];
 
@@ -48,7 +48,7 @@ class Core
 
             return $url;
         } else {
-            return array('home', 'index');
+            return array('vulkaanController', 'index');
         }
     }
 }
