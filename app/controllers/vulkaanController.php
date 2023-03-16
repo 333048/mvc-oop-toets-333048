@@ -6,7 +6,7 @@ class VulkaanController extends BaseController
 
     public function __construct()
     {
-        $this->vulkaanModel = $this->model('Vulkaan');
+        $this->vulkaanModel = $this->model('VulkaanModel');
     }
     public function index()
     {
