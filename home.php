@@ -7,10 +7,13 @@ class Home extends BaseController
 
         $data = [
             'title' => 'Top 5 actiefste vulkanen ter wereld',
-            'id'    => $id,
-            'name'  => $name,
+            'name'  => 'Mount Etna',
+            'height' => '3,329',
+            'country' => 'Italy',
+            'last_eruption' => '2021',
+            'number_of_victims' => '0'
         ];
 
-        $this->view('../index.php', $data);
+        $this->view('index.php', $data);
     }
 }
